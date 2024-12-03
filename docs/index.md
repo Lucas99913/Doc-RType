@@ -27,4 +27,4 @@ Welcome to the R-Type multiplayer game engine documentation. This project implem
 
 ## License
 
-This project is licensed under the [MIT License](../LICENSE).
+This project is licensed under the [MIT License](../LICENSE.md).
