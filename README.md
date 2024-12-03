@@ -2,7 +2,7 @@
 
 ## Link to the full documentation
 
-Inserer le lien vers la documentation
+Documentation is available [here](https://lucas99913.github.io/Doc-RType/)
 
 ## Installation
 
