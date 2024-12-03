@@ -51,20 +51,20 @@ Types:
 git checkout -b feature/new-feature
 ```
 
-2. Make changes
+1. Make changes
 
 ```bash
 git add .
 git commit -m "feat: add new feature"
 ```
 
-3. Push changes
+1. Push changes
 
 ```bash
 git push origin feature/new-feature
 ```
 
-4. Create Pull Request
+1. Create Pull Request
 
 ## Testing
 
