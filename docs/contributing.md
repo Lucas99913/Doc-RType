@@ -18,7 +18,7 @@
 
 ### Commit Guidelines
 
-```
+```bash
 type(scope): description
 
 [optional body]
