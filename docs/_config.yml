@@ -2,4 +2,8 @@ theme: jekyll-theme-minimal
 title: R-Type Documentation
 description: Documentation for the R-Type game engine
 markdown: GFM
-include: ["LICENSE"]
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+highlighter: rouge

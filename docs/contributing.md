@@ -18,7 +18,7 @@
 
 ### Commit Guidelines
 
-```bash
+```markdown
 type(scope): description
 
 [optional body]
@@ -28,13 +28,13 @@ type(scope): description
 
 Types:
 
-- feat: New feature
-- fix: Bug fix
-- docs: Documentation
-- style: Formatting
-- refactor: Code restructuring
-- test: Adding tests
-- chore: Maintenance
+- `feat`: New feature
+- `fix`: Bug fix
+- `docs`: Documentation
+- `style`: Formatting
+- `refactor`: Code restructuring
+- `test`: Adding tests
+- `chore`: Maintenance
 
 ## Pull Request Process
 
@@ -47,22 +47,22 @@ Types:
 
 1. Create feature branch
 
-   ```bash
-   git checkout -b feature/new-feature
-   ```
+```bash
+git checkout -b feature/new-feature
+```
 
 2. Make changes
 
-   ```bash
-   git add .
-   git commit -m "feat: add new feature"
-   ```
+```bash
+git add .
+git commit -m "feat: add new feature"
+```
 
 3. Push changes
 
-   ```bash
-   git push origin feature/new-feature
-   ```
+```bash
+git push origin feature/new-feature
+```
 
 4. Create Pull Request
 
@@ -84,3 +84,34 @@ TEST_CASE("Entity creation") {
     REQUIRE(entity != null);
 }
 ```
+
+## Code Review Process
+
+1. All code changes require review
+2. Reviewers should check:
+   - Code quality
+   - Test coverage
+   - Documentation
+   - Performance impact
+
+## Additional Guidelines
+
+- Write meaningful commit messages
+- Keep PRs focused and small
+- Update documentation when needed
+- Add tests for new features
+- Follow existing code style
+
+## Need Help?
+
+If you need help with:
+
+- Setting up your development environment
+- Understanding the codebase
+- Making your first contribution
+
+Please:
+
+- Check existing documentation
+- Open an issue for questions
+- Ask in pull request comments
