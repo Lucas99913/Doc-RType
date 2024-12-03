@@ -15,6 +15,7 @@ Our ECS architecture separates game logic into three main parts:
 #### Registry
 
 Central manager handling:
+
 - Entity creation/destruction
 - Component addition/removal
 - System coordination
@@ -81,7 +82,7 @@ sequenceDiagram
     participant Client
     participant Server
     participant OtherClients
-    
+
     Client->>Server: Input
     Server->>Server: Process
     Server->>Client: State Update
