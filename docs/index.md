@@ -16,7 +16,7 @@ Welcome to the R-Type multiplayer game engine documentation. This project implem
 - [Architecture](architecture.md) - Technical design and systems
 - [Network Protocol](network-protocol.md) - Communication specifications
 - [Engine Features](engine-features.md) - Core functionalities
-- [Contributing](contributing.md) - Development guidelines
+- [Contributor](contributor.md) - Development guidelines
 - [API Reference](api-reference.md) - Code documentation
 
 ## Quick Links
