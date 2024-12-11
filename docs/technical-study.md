@@ -197,23 +197,46 @@
 
 ### Technology Stack Selection
 
-```mermaid
-graph TD;
-    A((Project Requirements))-->B[C++];
-    A-->C[CMake];
-    A-->D[Conan];
-    A-->E[SFML];
-    B-->F[Implementation];
-    C-->F;
-    D-->F;
-    E-->F;
-    F-->G[Game Engine];
-    
-    classDef req fill:#f96,stroke:#333,stroke-width:2px;
-    classDef engine fill:#69f,stroke:#333,stroke-width:2px;
-    class A req;
-    class G engine;
-```
+#### Core Architecture Flow
+
+1. **Project Requirements**
+   - Cross-platform compatibility (Linux/Windows)
+   - Network multiplayer support
+   - Real-time game engine capabilities
+   - Graphics and audio management
+   - Resource and memory optimization
+   - Modern C++ practices
+   - Efficient build system
+   - Dependency management
+   - Documentation standards
+   - Multi-threading support
+   - Testing capabilities
+   - Version control system
+
+2. **Selected Technologies**
+   - **C++**: Core language for development
+   - **CMake**: Build system
+   - **Conan**: Package manager
+   - **SFML**: Graphics library
+
+3. **Implementation Layer**
+   All technologies converge to create:
+   - Components
+   - Systems
+   - Game Logic
+
+4. **Final Product**
+   - Game Engine
+   - R-Type Game
+
+#### Technology Relationships
+
+- **C++** provides the foundation for all components
+- **CMake** manages the build process
+- **Conan** handles external dependencies
+- **SFML** handles graphics, input, and audio
+- All components work together in the implementation layer
+- The implementation layer produces the final game engine
 
 ### Key Decision Factors
 
