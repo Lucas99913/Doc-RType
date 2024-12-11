@@ -4,27 +4,14 @@ title: R-Type Documentation
 description: Documentation for the R-Type game engine
 
 # Markdown Processing
-markdown: kramdown
+markdown: GFM
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-  math_engine: mathjax
   hard_wrap: false
-  mermaid:
-    theme: dark
 
 # Syntax Highlighting
 highlighter: rouge
-
-# Plugins
-plugins:
-  - jekyll-mermaid
-
-# Build Configuration
-livereload: true
-incremental: false
-mermaid:
-  version: "9.1.7"
 
 # File Handling
 include:
@@ -56,10 +43,8 @@ defaults:
       type: "pages"
     values:
       layout: "default"
-      mermaid: true
   - scope:
       path: "docs"
       type: "docs"
     values:
       layout: "doc"
-      mermaid: true
