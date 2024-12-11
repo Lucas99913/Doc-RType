@@ -7,3 +7,20 @@ kramdown:
   syntax_highlighter: rouge
   hard_wrap: false
 highlighter: rouge
+mermaid:
+  version: "10.6.1"
+plugins:
+  - jekyll-mermaid
+defaults:
+  - scope:
+      path: ""
+    values:
+      mermaid: true
+include: 
+  - "LICENSE"
+  - "_*.html"
+  - "*.md"
+exclude:
+  - ".gitignore"
+  - "Gemfile"
+  - "Gemfile.lock"

@@ -198,8 +198,8 @@
 ### Technology Stack Selection
 
 ```mermaid
-graph TD
-    A[Project Requirements] --> B[C++]
+flowchart TD
+    A([Project Requirements]) --> B[C++]
     A --> C[CMake]
     A --> D[Conan]
     A --> E[SFML]
@@ -210,6 +210,9 @@ graph TD
     E --> F
 
     F --> G[Game Engine]
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style G fill:#bbf,stroke:#333,stroke-width:2px
 ```
 
 ### Key Decision Factors
