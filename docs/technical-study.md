@@ -198,19 +198,21 @@
 ### Technology Stack Selection
 
 ```mermaid
-%%{init: {'theme': 'dark'}}%%
-flowchart LR
-    A["Project Requirements"] --> B["C++"]
-    A --> C["CMake"]
-    A --> D["Conan"]
-    A --> E["SFML"]
-
-    B --> F["Implementation"]
-    C --> F
-    D --> F
-    E --> F
-
-    F --> G["Game Engine"]
+graph TD;
+    A((Project Requirements))-->B[C++];
+    A-->C[CMake];
+    A-->D[Conan];
+    A-->E[SFML];
+    B-->F[Implementation];
+    C-->F;
+    D-->F;
+    E-->F;
+    F-->G[Game Engine];
+    
+    classDef req fill:#f96,stroke:#333,stroke-width:2px;
+    classDef engine fill:#69f,stroke:#333,stroke-width:2px;
+    class A req;
+    class G engine;
 ```
 
 ### Key Decision Factors
