@@ -198,21 +198,19 @@
 ### Technology Stack Selection
 
 ```mermaid
-flowchart TD
-    A([Project Requirements]) --> B[C++]
-    A --> C[CMake]
-    A --> D[Conan]
-    A --> E[SFML]
+%%{init: {'theme': 'dark'}}%%
+flowchart LR
+    A["Project Requirements"] --> B["C++"]
+    A --> C["CMake"]
+    A --> D["Conan"]
+    A --> E["SFML"]
 
-    B --> F[Implementation]
+    B --> F["Implementation"]
     C --> F
     D --> F
     E --> F
 
-    F --> G[Game Engine]
-
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style G fill:#bbf,stroke:#333,stroke-width:2px
+    F --> G["Game Engine"]
 ```
 
 ### Key Decision Factors
@@ -287,6 +285,7 @@ class RenderSystem {
 ## Conclusion
 
 Our technology stack choices (C++, CMake, Conan, and SFML) provide the optimal balance of:
+
 - Performance
 - Development efficiency
 - Cross-platform support
