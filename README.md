@@ -80,7 +80,7 @@ To launch the client, you must execute the following command:
 ## Contributors
 
 - [Lucas Giorsetti](https://github.com/Lucas99913)
-- [Théo Berger](https://github.com/theo-wq)
+- [Théo Berget](https://github.com/theo-wq)
 - [Noam Bouriche](https://github.com/Noam044)
 - [Rayan Bahri](https://github.com/Rvvyynn)
 

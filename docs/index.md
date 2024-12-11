@@ -13,6 +13,7 @@ Welcome to the R-Type multiplayer game engine documentation. This project implem
 ## Documentation Sections
 
 - [Getting Started](getting-started.md) - Build and run instructions
+- [Technical Study](technical-study.md) - Language and Tool choices
 - [Architecture](architecture.md) - Technical design and systems
 - [Network Protocol](network-protocol.md) - Communication specifications
 - [Engine Features](engine-features.md) - Core functionalities
