@@ -1,4 +1,3 @@
-```markdown
 # R-Type Server Protocol Specification
 
 ## Status of this Memo
@@ -172,10 +171,3 @@ The server implements:
 2. UDP Network Programming
 3. Game Server Architecture
 4. Real-time Multiplayer Game Development
-
-## Authors' Addresses
-
-[Your Organization]
-[Address]
-[Contact Information]
-```
