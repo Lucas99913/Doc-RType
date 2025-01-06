@@ -66,7 +66,7 @@ If you encounter other errors, refer to our [documentation](mettre le lien).
 To launch the server, you must execute the following command:
 
 ```sh
-./r-type_server [PUBLIC_IP_OF_THE_SERVER (default: 127.0.0.1)]
+./r-type_server [PUBLIC_IP_OF_THE_SERVER (default: 127.0.0.1)] [PORT (default: 6000)]
 ```
 
 ### Client
@@ -74,7 +74,7 @@ To launch the server, you must execute the following command:
 To launch the client, you must execute the following command:
 
 ```sh
-./r-type_client
+./r-type_client [YOUR_IP] [PORT]
 ```
 
 ## Contributors
