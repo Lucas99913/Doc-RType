@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900">
+    <!-- Style global -->
+    <style>
+        .title { 
+            font-weight: bold; 
+            font-size: 16px;
+            font-family: 'Arial', sans-serif;
+            fill: #2c3e50;
+        }
+        .attr { 
+            font-size: 13px;
+            font-family: 'Arial', sans-serif;
+            fill: #34495e;
+        }
+        .method { 
+            font-size: 13px;
+            font-family: 'Arial', sans-serif;
+            fill: #34495e;
+        }
+        .class-box { 
+            fill: #ecf0f1;
+            stroke: #95a5a6;
+            stroke-width: 2;
+            rx: 6;
+            ry: 6;
+            filter: drop-shadow(3px 3px 4px rgba(0,0,0,0.2));
+        }
+        .class-header {
+            fill: #3498db;
+            rx: 6;
+            ry: 6;
+        }
+        .text { 
+            font-family: 'Arial', sans-serif;
+        }
+        .arrow { 
+            fill: none; 
+            stroke: #95a5a6; 
+            stroke-width: 2; 
+            marker-end: url(#arrowhead);
+        }
+        .separator {
+            stroke: #bdc3c7;
+            stroke-width: 1;
+        }
+    </style>
+
+    <!-- Définition de la flèche -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#95a5a6"/>
+        </marker>
+        <filter id="shadow">
+            <feDropShadow dx="3" dy="3" stdDeviation="2" flood-opacity="0.2"/>
+        </filter>
+    </defs>
+
+    <!-- RenderWindow -->
+    <g transform="translate(300,50)">
+        <rect width="250" height="230" class="class-box"/>
+        <rect width="250" height="30" class="class-header" fill="#3498db"/>
+        <line x1="0" y1="70" x2="250" y2="70" class="separator"/>
+        <text x="95" y="20" class="title" fill="white">RenderWindow</text>
+        <text x="10" y="45" class="attr">- _window: sf::RenderWindow</text>
+        <text x="10" y="60" class="attr">- _events: std::queue&lt;Event&gt;</text>
+        <text x="10" y="90" class="method">+ RenderWindow()</text>
+        <text x="10" y="105" class="method">+ RenderWindow(mode, title, style, settings)</text>
+        <text x="10" y="120" class="method">+ create(mode, title, style, settings)</text>
+        <text x="10" y="135" class="method">+ close()</text>
+        <text x="10" y="150" class="method">+ isOpen(): bool</text>
+        <text x="10" y="165" class="method">+ pollEvent(event: Event): bool</text>
+        <text x="10" y="180" class="method">+ clear(color: Color)</text>
+        <text x="10" y="195" class="method">+ display()</text>
+        <text x="10" y="210" class="method">+ draw(drawable: sf::Drawable, states)</text>
+        <text x="10" y="225" class="method">+ getRenderWindow(): sf::RenderWindow&amp;</text>
+    </g>
+
+    <!-- Keyboard -->
+    <g transform="translate(50,350)">
+        <rect width="200" height="100" class="class-box"/>
+        <rect width="200" height="30" class="class-header" fill="#e74c3c"/>
+        <line x1="0" y1="45" x2="200" y2="45" class="separator"/>
+        <text x="75" y="20" class="title" fill="white">Keyboard</text>
+        <text x="10" y="60" class="method">+ &lt;&lt;enumeration&gt;&gt; Key</text>
+        <text x="10" y="75" class="method">+ convertKey(key: sf::Keyboard::Key)</text>
+        <text x="10" y="90" class="method">+ isKeyPressed(key: Key): bool</text>
+    </g>
+
+    <!-- Mouse -->
+    <g transform="translate(300,350)">
+        <rect width="250" height="140" class="class-box"/>
+        <rect width="250" height="30" class="class-header" fill="#e74c3c"/>
+        <line x1="0" y1="45" x2="250" y2="45" class="separator"/>
+        <text x="100" y="20" class="title" fill="white">Mouse</text>
+        <text x="10" y="60" class="method">+ &lt;&lt;enumeration&gt;&gt; Button</text>
+        <text x="10" y="75" class="method">+ &lt;&lt;enumeration&gt;&gt; Wheel</text>
+        <text x="10" y="90" class="method">+ isButtonPressed(button: Button): bool</text>
+        <text x="10" y="105" class="method">+ getPosition(): Vector2i</text>
+        <text x="10" y="120" class="method">+ getPosition(relativeTo: RenderWindow)</text>
+        <text x="10" y="135" class="method">+ setPosition(position: Vector2i)</text>
+    </g>
+
+    <!-- Event -->
+    <g transform="translate(600,350)">
+        <rect width="150" height="60" class="class-box"/>
+        <rect width="150" height="30" class="class-header" fill="#2ecc71"/>
+        <text x="55" y="20" class="title" fill="white">Event</text>
+        <text x="20" y="45" class="attr">&lt;&lt;interface&gt;&gt;</text>
+    </g>
+
+    <!-- ContextSettings -->
+    <g transform="translate(50,550)">
+        <rect width="200" height="160" class="class-box"/>
+        <rect width="200" height="30" class="class-header" fill="#9b59b6"/>
+        <line x1="0" y1="140" x2="200" y2="140" class="separator"/>
+        <text x="55" y="20" class="title" fill="white">ContextSettings</text>
+        <text x="10" y="45" class="attr">+ depthBits: uint32_t</text>
+        <text x="10" y="60" class="attr">+ stencilBits: uint32_t</text>
+        <text x="10" y="75" class="attr">+ antialiasingLevel: uint32_t</text>
+        <text x="10" y="90" class="attr">+ majorVersion: uint32_t</text>
+        <text x="10" y="105" class="attr">+ minorVersion: uint32_t</text>
+        <text x="10" y="120" class="attr">+ attributeFlags: uint32_t</text>
+        <text x="10" y="135" class="attr">+ sRgbCapable: bool</text>
+        <text x="10" y="155" class="method">+ ContextSettings(...)</text>
+    </g>
+
+    <!-- VideoMode -->
+    <g transform="translate(300,550)">
+        <rect width="200" height="140" class="class-box"/>
+        <rect width="200" height="30" class="class-header" fill="#f1c40f"/>
+        <line x1="0" y1="45" x2="200" y2="45" class="separator"/>
+        <text x="70" y="20" class="title" fill="white">VideoMode</text>
+        <text x="10" y="40" class="attr">- _videoMode: sf::VideoMode</text>
+        <text x="10" y="60" class="method">+ VideoMode()</text>
+        <text x="10" y="75" class="method">+ VideoMode(width, height, bpp)</text>
+        <text x="10" y="90" class="method">+ getDesktopMode(): VideoMode</text>
+        <text x="10" y="105" class="method">+ width(): uint32_t</text>
+        <text x="10" y="120" class="method">+ height(): uint32_t</text>
+        <text x="10" y="135" class="method">+ bitsPerPixel(): uint32_t</text>
+    </g>
+
+    <!-- Color -->
+    <g transform="translate(600,550)">
+        <rect width="150" height="60" class="class-box"/>
+        <rect width="150" height="30" class="class-header" fill="#2ecc71"/>
+        <text x="55" y="20" class="title" fill="white">Color</text>
+        <text x="20" y="45" class="attr">&lt;&lt;interface&gt;&gt;</text>
+    </g>
+
+    <!-- Relations avec courbes Bézier pour plus d'élégance -->
+    <path d="M 550,165 C 600,165 650,250 675,350" class="arrow"/>
+    <path d="M 400,280 C 400,300 400,500 400,550" class="arrow"/>
+    <path d="M 300,280 C 250,300 200,500 150,550" class="arrow"/>
+    <path d="M 550,280 C 600,300 650,500 675,550" class="arrow"/>
+    <path d="M 425,350 C 425,330 425,300 425,280" class="arrow"/>
+</svg>

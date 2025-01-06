@@ -19,6 +19,7 @@ Welcome to the R-Type multiplayer game engine documentation. This project implem
 - [Engine Features](engine-features.md) - Core functionalities
 - [Contributions](contributions.md) - Development guidelines
 - [API Reference](api-reference.md) - Code documentation
+- [Protocol RFC](rfc_doc.md) - Protocol specification
 
 ## Quick Links
 

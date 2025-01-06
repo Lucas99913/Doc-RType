@@ -23,6 +23,8 @@
 - Particle effects
 - Background parallax
 
+![SFML Diagram](sfml_class_diagram.svg)
+
 ### Audio
 
 - Sound effects
