@@ -1,6 +1,7 @@
 # R-TYPE
 
-![R-Type](rtype_screen.jpg)
+<!-- ![R-Type](rtype_screen.jpg) -->
+[![RType](rtype_screen.jpg)](https://www.youtube.com/watch?v=pVWtI0426mU&ab_channel=WorldofLongplays)
 
 ## Link to the full documentation
 
