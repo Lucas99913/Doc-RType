@@ -1,5 +1,7 @@
 # R-TYPE
 
+![R-Type](rtype_screen.jpg)
+
 ## Link to the full documentation
 
 Documentation is available [here](https://lucas99913.github.io/Doc-RType/)
