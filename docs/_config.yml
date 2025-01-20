@@ -60,8 +60,7 @@ collections:
 # Plugins
 plugins:
   - search
-  - minify:
-      minify_html: true
+  - minify
 
 # Extra Settings
 extra:
