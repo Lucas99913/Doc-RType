@@ -1,38 +1,18 @@
 # Theme Configuration
-theme:
-  name: material
-  palette:
-    scheme: slate
-    primary: indigo
-    accent: cyan
-  features:
-    - navigation.tabs
-    - navigation.instant
-    - navigation.sections
-    - navigation.expand
-    - search.suggest
-    - search.highlight
-  icon:
-    repo: fontawesome/brands/github
-  logo: assets/logo.svg
-  favicon: assets/favicon.png
-
-# Site Settings
-site_name: R-Type Documentation
-site_description: Documentation for the R-Type game engine
-site_url: https://lucas99913.github.io/Doc-RType
-repo_url: https://github.com/Lucas99913/Doc-RType
-repo_name: Lucas99913/Doc-RType
+remote_theme: pages-themes/cayman@v0.2.0
+title: R-Type Documentation
+description: Documentation for the R-Type game engine
 
 # Markdown Processing
-markdown_extensions:
-  - pymdownx.highlight
-  - pymdownx.superfences
-  - pymdownx.tabbed
-  - pymdownx.emoji
-  - admonition
-  - toc:
-      permalink: true
+markdown: GFM
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+  toc_levels: 1..3
+
+# Syntax Highlighting
+highlighter: rouge
 
 # File Handling
 include:
@@ -57,15 +37,36 @@ collections:
     output: true
     permalink: /:collection/:path/
 
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "docs"
+      type: "docs"
+    values:
+      layout: "doc"
+
 # Plugins
 plugins:
-  - search
-  - minify
+  - jekyll-remote-theme
+  - jekyll-seo-tag
 
-# Extra Settings
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/Lucas99913/Doc-RType
-  version:
-    provider: mike
+# Theme Options
+show_downloads: true
+github:
+  is_project_page: true
+  repository_url: https://github.com/Lucas99913/Doc-RType
+  owner_url: https://github.com/Lucas99913
+  owner_name: Lucas99913
+
+# Custom Styling
+colors:
+  header: "#159957"
+  gradient_left: "#155799"
+  gradient_right: "#159957"
+  link: "#1e6bb8"
+  section_headings: "#159957"
