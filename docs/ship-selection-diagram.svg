@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <!-- Title -->
+    <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" fill="#333">Ship Selection System</text>
+
+    <!-- ShipSelector Class -->
+    <rect x="50" y="60" width="250" height="160" fill="#f0f0f0" stroke="#666" stroke-width="2"/>
+    <rect x="50" y="60" width="250" height="30" fill="#6b8e23" stroke="#666"/>
+    <text x="175" y="80" font-family="Arial" font-size="16" fill="white" text-anchor="middle">ShipSelector</text>
+    
+    <!-- ShipSelector Members -->
+    <text x="60" y="110" font-family="Arial" font-size="14">- window: RenderWindow</text>
+    <text x="60" y="130" font-family="Arial" font-size="14">- ships: vector&lt;Sprite&gt;</text>
+    <text x="60" y="150" font-family="Arial" font-size="14">- selectedShip: int</text>
+    <text x="60" y="170" font-family="Arial" font-size="14">+ run(): int</text>
+    <text x="60" y="190" font-family="Arial" font-size="14">+ getSelectedShip(): int</text>
+
+    <!-- GameClient Class -->
+    <rect x="500" y="60" width="250" height="160" fill="#f0f0f0" stroke="#666" stroke-width="2"/>
+    <rect x="500" y="60" width="250" height="30" fill="#6b8e23" stroke="#666"/>
+    <text x="625" y="80" font-family="Arial" font-size="16" fill="white" text-anchor="middle">GameClient</text>
+    
+    <!-- GameClient Members -->
+    <text x="510" y="110" font-family="Arial" font-size="14">- playerShipType: int</text>
+    <text x="510" y="130" font-family="Arial" font-size="14">+ setPlayerShip(type: int): void</text>
+    <text x="510" y="150" font-family="Arial" font-size="14">+ playerCreation(...): void</text>
+    <text x="510" y="170" font-family="Arial" font-size="14">+ connectionScreen(): void</text>
+    
+    <!-- Interface Elements -->
+    <rect x="200" y="280" width="400" height="80" fill="#fff4dd" stroke="#d4b967" stroke-width="2"/>
+    <text x="400" y="300" font-family="Arial" font-size="14" text-anchor="middle">Interface Elements:</text>
+    <text x="400" y="320" font-family="Arial" font-size="12" text-anchor="middle">- Ship Preview (33x17 sprites)</text>
+    <text x="400" y="340" font-family="Arial" font-size="12" text-anchor="middle">- Selection Indicators</text>
+    
+    <!-- Connections -->
+    <path d="M300,140 L500,140" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="400" y="130" font-family="Arial" font-size="12" text-anchor="middle">Ship Selection</text>
+
+    <!-- Arrow Marker -->
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+            <path d="M0,0 L10,5 L0,10 Z" fill="#666"/>
+        </marker>
+    </defs>
+</svg>
