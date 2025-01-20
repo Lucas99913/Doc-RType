@@ -19,6 +19,7 @@ Welcome to the R-Type multiplayer game engine documentation. This project implem
 - [Engine Features](engine-features.md) - Core functionalities
 - [Accessibility Guide](accessibility-guide.md) - Accessibility features and setup
 - [Procedural Generation](procedural-generation.md) - Level generation system
+- [Video System](video-system.md) - Video recording and playback system
 - [Ship Customization](ship-customization.md) - Ship selection and customization system
 - [Contributions](contributions.md) - Development guidelines
 - [API Reference](api-reference.md) - Code documentation
