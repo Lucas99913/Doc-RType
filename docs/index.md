@@ -1,4 +1,4 @@
-# R-Type Game Engine
+# R-Type
 
 Welcome to the R-Type multiplayer game engine documentation. This project implements a networked version of the classic R-Type shoot'em up using a modern Entity Component System architecture.
 
