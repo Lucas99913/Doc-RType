@@ -22,6 +22,12 @@
 - Animation system
 - Particle effects
 - Background parallax
+- Ship customization rendering
+- Video recording and playback:
+  - Real-time capture at 30 FPS
+  - MP4 format with audio
+  - FFMPEG integration
+  - Recording browser interface
 
 ![SFML Diagram](sfml_class_diagram.svg)
 
@@ -37,6 +43,7 @@
   - Enemy notifications
   - Ambient audio
 - Runtime audio toggling
+- Video recording audio capture
 
 ## Game Features
 
@@ -46,6 +53,11 @@
 - Weapon systems
 - Power-ups
 - Force module
+- Ship customization:
+  - Multiple ship variants (4 types)
+  - Ship selection interface
+  - Visual ship preview
+  - Ship skin persistence
 
 ### Enemy Systems
 
@@ -67,6 +79,22 @@
 - Obstacle placement
 
 ![Procedural Generation](procedural-generation.svg)
+
+### Recording System
+
+- Real-time gameplay recording
+- Video record management:
+  - Auto-organized in /records directory
+  - Timestamp-based naming
+  - Browser interface
+- Video playback features:
+  - Play/Pause controls
+  - Stop functionality
+  - Interactive UI
+  - Record selection
+- FFMPEG integration
+
+![Video System](video-system-diagram.svg)
 
 ## Debug Features
 
@@ -91,6 +119,7 @@ debug.setVariable("playerSpeed", 5.0f);
   - Colorblind mode via `-colors` flag
   - High contrast options
   - Configurable visual effects
+  - Ship variant distinction
 - Audio features:
   - Enhanced audio descriptions via `-audio` flag
   - Volume boost option via `-sound` flag
