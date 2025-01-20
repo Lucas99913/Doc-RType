@@ -1,19 +1,38 @@
 # Theme Configuration
-remote_theme: just-the-docs/just-the-docs
-title: R-Type Documentation
-description: Documentation for the R-Type game engine
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: indigo
+    accent: cyan
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+  logo: assets/logo.svg
+  favicon: assets/favicon.png
+
+# Site Settings
+site_name: R-Type Documentation
+site_description: Documentation for the R-Type game engine
+site_url: https://lucas99913.github.io/Doc-RType
+repo_url: https://github.com/Lucas99913/Doc-RType
+repo_name: Lucas99913/Doc-RType
 
 # Markdown Processing
-markdown: GFM
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  hard_wrap: false
-
-# Theme Settings
-color_scheme: dark
-search_enabled: true
-heading_anchors: true
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.emoji
+  - admonition
+  - toc:
+      permalink: true
 
 # File Handling
 include:
@@ -32,36 +51,22 @@ exclude:
   - README.md
   - CONTRIBUTING.md
 
-# Just the Docs Settings
-aux_links:
-  "View on GitHub":
-    - "https://github.com/Lucas99913/Doc-RType"
-aux_links_new_tab: true
-
-# Navigation
-nav_external_links:
-  - title: GitHub Repository
-    url: https://github.com/EpitechPromo2027/B-CPP-500-MAR-5-2-rtype-theo.berget
-    hide_icon: false
-
 # Collections
 collections:
   docs:
     output: true
     permalink: /:collection/:path/
 
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-  - scope:
-      path: "docs"
-      type: "docs"
-    values:
-      layout: "doc"
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
 
-# Footer Settings
-footer_content: "Copyright &copy; 2024 R-Type Documentation. Distributed under MIT license."
+# Extra Settings
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Lucas99913/Doc-RType
+  version:
+    provider: mike
