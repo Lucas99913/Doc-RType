@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <!-- Lifelines -->
+    <line x1="100" y1="60" x2="100" y2="350" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="300" y1="60" x2="300" y2="350" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="500" y1="60" x2="500" y2="350" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="700" y1="60" x2="700" y2="350" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+    
+    <!-- Participants -->
+    <rect x="50" y="20" width="100" height="40" fill="#4CAF50" stroke="#666"/>
+    <text x="100" y="45" font-family="Arial" font-size="14" fill="white" text-anchor="middle">User</text>
+    
+    <rect x="250" y="20" width="100" height="40" fill="#2196F3" stroke="#666"/>
+    <text x="300" y="45" font-family="Arial" font-size="14" fill="white" text-anchor="middle">GameClient</text>
+    
+    <rect x="450" y="20" width="100" height="40" fill="#FF5722" stroke="#666"/>
+    <text x="500" y="45" font-family="Arial" font-size="14" fill="white" text-anchor="middle">SoundManager</text>
+    
+    <rect x="650" y="20" width="100" height="40" fill="#9C27B0" stroke="#666"/>
+    <text x="700" y="45" font-family="Arial" font-size="14" fill="white" text-anchor="middle">AudioSystem</text>
+    
+    <!-- Messages -->
+    <path d="M100,100 L300,100" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="200" y="95" font-family="Arial" font-size="12" text-anchor="middle">Game Action</text>
+    
+    <path d="M300,120 L500,120" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="400" y="115" font-family="Arial" font-size="12" text-anchor="middle">playSound(eventType)</text>
+    
+    <path d="M500,140 L700,140" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="600" y="135" font-family="Arial" font-size="12" text-anchor="middle">Load Sound Buffer</text>
+    
+    <path d="M700,180 L100,180" stroke="#666" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+    <text x="400" y="175" font-family="Arial" font-size="12" text-anchor="middle">Play Audio Feedback</text>
+    
+    <!-- Note Box -->
+    <rect x="50" y="250" width="200" height="80" fill="#fff4dd" stroke="#d4b967"/>
+    <text x="150" y="270" font-family="Arial" font-size="12" text-anchor="middle">Sound Types:</text>
+    <text x="150" y="290" font-family="Arial" font-size="12" text-anchor="middle">1. Movement</text>
+    <text x="150" y="310" font-family="Arial" font-size="12" text-anchor="middle">2. Shooting</text>
+    <text x="150" y="330" font-family="Arial" font-size="12" text-anchor="middle">3. Enemy Spawn</text>
+    
+    <!-- Arrow Marker -->
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+            <path d="M0,0 L10,5 L0,10 Z" fill="#666"/>
+        </marker>
+    </defs>
+</svg>

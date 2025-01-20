@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <!-- Classes Background -->
+    <rect x="50" y="50" width="200" height="160" fill="#f0f0f0" stroke="#666" stroke-width="2"/>
+    <rect x="300" y="50" width="200" height="100" fill="#f0f0f0" stroke="#666" stroke-width="2"/>
+    <rect x="550" y="50" width="200" height="100" fill="#f0f0f0" stroke="#666" stroke-width="2"/>
+    
+    <!-- Class Names -->
+    <rect x="50" y="50" width="200" height="30" fill="#6b8e23" stroke="#666" stroke-width="2"/>
+    <text x="150" y="70" font-family="Arial" font-size="16" fill="white" text-anchor="middle">SoundManager</text>
+    
+    <rect x="300" y="50" width="200" height="30" fill="#6b8e23" stroke="#666" stroke-width="2"/>
+    <text x="400" y="70" font-family="Arial" font-size="16" fill="white" text-anchor="middle">GameClient</text>
+    
+    <rect x="550" y="50" width="200" height="30" fill="#6b8e23" stroke="#666" stroke-width="2"/>
+    <text x="650" y="70" font-family="Arial" font-size="16" fill="white" text-anchor="middle">AudioConfig</text>
+    
+    <!-- Class Methods -->
+    <text x="60" y="100" font-family="Arial" font-size="14">-soundBuffers: Map</text>
+    <text x="60" y="120" font-family="Arial" font-size="14">-sounds: Map</text>
+    <text x="60" y="140" font-family="Arial" font-size="14">+getInstance()</text>
+    <text x="60" y="160" font-family="Arial" font-size="14">+loadSound(name, filepath)</text>
+    <text x="60" y="180" font-family="Arial" font-size="14">+playSound(name)</text>
+    
+    <text x="310" y="100" font-family="Arial" font-size="14">-window: RenderWindow</text>
+    <text x="310" y="120" font-family="Arial" font-size="14">+updateGame(player)</text>
+    
+    <text x="560" y="100" font-family="Arial" font-size="14">+checkAudio()</text>
+    <text x="560" y="120" font-family="Arial" font-size="14">+setMaxVolume()</text>
+    
+    <!-- Arrows -->
+    <path d="M300,100 L250,100" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M550,100 L500,100" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Arrow Marker -->
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+            <path d="M0,0 L10,5 L0,10 Z" fill="#666"/>
+        </marker>
+    </defs>
+    
+    <!-- Notes -->
+    <rect x="50" y="250" width="200" height="60" fill="#fff4dd" stroke="#d4b967" stroke-width="2"/>
+    <text x="150" y="280" font-family="Arial" font-size="12" text-anchor="middle">Singleton pattern</text>
+    <text x="150" y="300" font-family="Arial" font-size="12" text-anchor="middle">Manages all game audio</text>
+</svg>

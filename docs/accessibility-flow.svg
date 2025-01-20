@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+    <!-- Start -->
+    <rect x="350" y="20" width="100" height="40" rx="5" fill="#4CAF50" stroke="#666"/>
+    <text x="400" y="45" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Game Start</text>
+    
+    <!-- Command Line Check -->
+    <path d="M400,60 L400,100" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    <polygon points="350,100 450,100 400,150" fill="#FFB74D" stroke="#666"/>
+    <text x="400" y="130" font-family="Arial" font-size="12" text-anchor="middle">Check Command</text>
+    <text x="400" y="145" font-family="Arial" font-size="12" text-anchor="middle">Line Args</text>
+    
+    <!-- Audio Branch -->
+    <path d="M350,125 L250,175" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="200" y="175" width="100" height="40" rx="5" fill="#2196F3" stroke="#666"/>
+    <text x="250" y="200" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Enable Audio</text>
+    
+    <!-- Colors Branch -->
+    <path d="M400,150 L400,175" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="350" y="175" width="100" height="40" rx="5" fill="#2196F3" stroke="#666"/>
+    <text x="400" y="200" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Enable Colors</text>
+    
+    <!-- Sound Branch -->
+    <path d="M450,125 L550,175" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="500" y="175" width="100" height="40" rx="5" fill="#2196F3" stroke="#666"/>
+    <text x="550" y="200" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Set Max Volume</text>
+    
+    <!-- Initialize Systems -->
+    <path d="M250,215 L250,275" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M400,215 L400,275" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M550,215 L550,275" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <rect x="200" y="275" width="400" height="40" rx="5" fill="#9C27B0" stroke="#666"/>
+    <text x="400" y="300" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Initialize Game Systems</text>
+    
+    <!-- Game Loop -->
+    <path d="M400,315 L400,375" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="350" y="375" width="100" height="40" rx="5" fill="#FF5722" stroke="#666"/>
+    <text x="400" y="400" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Game Loop</text>
+    
+    <!-- Arrow Marker -->
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+            <path d="M0,0 L10,5 L0,10 Z" fill="#666"/>
+        </marker>
+    </defs>
+</svg>
