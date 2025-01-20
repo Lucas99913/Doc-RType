@@ -1,5 +1,5 @@
 # Theme Configuration
-theme: jekyll-theme-minimal
+remote_theme: just-the-docs/just-the-docs
 title: R-Type Documentation
 description: Documentation for the R-Type game engine
 
@@ -10,8 +10,10 @@ kramdown:
   syntax_highlighter: rouge
   hard_wrap: false
 
-# Syntax Highlighting
-highlighter: rouge
+# Theme Settings
+color_scheme: dark
+search_enabled: true
+heading_anchors: true
 
 # File Handling
 include:
@@ -29,6 +31,18 @@ exclude:
   - .gitignore
   - README.md
   - CONTRIBUTING.md
+
+# Just the Docs Settings
+aux_links:
+  "View on GitHub":
+    - "https://github.com/Lucas99913/Doc-RType"
+aux_links_new_tab: true
+
+# Navigation
+nav_external_links:
+  - title: GitHub Repository
+    url: https://github.com/EpitechPromo2027/B-CPP-500-MAR-5-2-rtype-theo.berget
+    hide_icon: false
 
 # Collections
 collections:
@@ -48,3 +62,6 @@ defaults:
       type: "docs"
     values:
       layout: "doc"
+
+# Footer Settings
+footer_content: "Copyright &copy; 2024 R-Type Documentation. Distributed under MIT license."
