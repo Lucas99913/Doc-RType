@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <!-- Title -->
+    <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" fill="#333">Procedural Level Generation System</text>
+
+    <!-- Main Components -->
+    <rect x="50" y="60" width="200" height="100" fill="#f0f0f0" stroke="#666" stroke-width="2"/>
+    <text x="150" y="90" font-family="Arial" font-size="16" text-anchor="middle">Random Generator</text>
+    <text x="150" y="110" font-family="Arial" font-size="12" text-anchor="middle">- Seed Generation</text>
+    <text x="150" y="130" font-family="Arial" font-size="12" text-anchor="middle">- Distribution Control</text>
+
+    <rect x="300" y="60" width="200" height="100" fill="#f0f0f0" stroke="#666" stroke-width="2"/>
+    <text x="400" y="90" font-family="Arial" font-size="16" text-anchor="middle">Map Generator</text>
+    <text x="400" y="110" font-family="Arial" font-size="12" text-anchor="middle">13x23 Grid</text>
+    <text x="400" y="130" font-family="Arial" font-size="12" text-anchor="middle">Binary Cell States</text>
+
+    <rect x="550" y="60" width="200" height="100" fill="#f0f0f0" stroke="#666" stroke-width="2"/>
+    <text x="650" y="90" font-family="Arial" font-size="16" text-anchor="middle">Level Output</text>
+    <text x="650" y="110" font-family="Arial" font-size="12" text-anchor="middle">Text File Format</text>
+    <text x="650" y="130" font-family="Arial" font-size="12" text-anchor="middle">Game Level Loading</text>
+
+    <!-- Process Flow -->
+    <path d="M250,110 L300,110" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M500,110 L550,110" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Example Output -->
+    <rect x="300" y="200" width="200" height="150" fill="#fff4dd" stroke="#d4b967" stroke-width="2"/>
+    <text x="400" y="220" font-family="Arial" font-size="14" text-anchor="middle">Example Output Format:</text>
+    <text x="400" y="250" font-family="Courier" font-size="12" text-anchor="middle">0000100000000</text>
+    <text x="400" y="270" font-family="Courier" font-size="12" text-anchor="middle">0001000000000</text>
+    <text x="400" y="290" font-family="Courier" font-size="12" text-anchor="middle">0000000100000</text>
+    <text x="400" y="310" font-family="Courier" font-size="12" text-anchor="middle">...</text>
+
+    <!-- Arrow Marker -->
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+            <path d="M0,0 L10,5 L0,10 Z" fill="#666"/>
+        </marker>
+    </defs>
+</svg>

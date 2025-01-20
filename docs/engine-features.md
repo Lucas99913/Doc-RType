@@ -27,10 +27,16 @@
 
 ### Audio
 
-- Sound effects
-- Background music
-- Volume control
-- Spatial audio
+- Enhanced sound system with SoundManager singleton
+- Real-time audio feedback for game events
+- Configurable volume control with boost options
+- Audio description support for accessibility
+- Sound categories:
+  - Movement feedback
+  - Weapon effects
+  - Enemy notifications
+  - Ambient audio
+- Runtime audio toggling
 
 ## Game Features
 
@@ -50,10 +56,17 @@
 
 ### Level System
 
+- Procedural level generation:
+  - Random map generation (13x23 grid)
+  - Dynamic obstacle placement
+  - Binary cell system (0 empty, 1 obstacle)
+  - 1% obstacle probability
 - Stage progression
 - Enemy waves
 - Background management
 - Obstacle placement
+
+![Procedural Generation](procedural-generation.svg)
 
 ## Debug Features
 
@@ -74,6 +87,20 @@ debug.setVariable("playerSpeed", 5.0f);
 ## Accessibility
 
 - Configurable controls
-- Visual assistance
-- Audio cues
+- Visual assistance:
+  - Colorblind mode via `-colors` flag
+  - High contrast options
+  - Configurable visual effects
+- Audio features:
+  - Enhanced audio descriptions via `-audio` flag
+  - Volume boost option via `-sound` flag
+  - Event-based sound feedback
+  - Runtime audio toggles
 - Difficulty settings
+- Command line options:
+  ```bash
+  ./r-type_client [options]
+    -audio    Enable audio descriptions
+    -colors   Enable colorblind mode
+    -sound    Set maximum volume
+  ```
