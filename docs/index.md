@@ -18,6 +18,7 @@ Welcome to the R-Type multiplayer game engine documentation. This project implem
 - [Network Protocol](network-protocol.md) - Communication specifications
 - [Engine Features](engine-features.md) - Core functionalities
 - [Accessibility Guide](accessibility-guide.md) - Accessibility features and setup
+- [Procedural Generation](procedural-generation.md) - Level generation system
 - [Contributions](contributions.md) - Development guidelines
 - [API Reference](api-reference.md) - Code documentation
 - [Protocol RFC](rfc_doc.md) - Protocol specification
