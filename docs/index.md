@@ -2,13 +2,19 @@
 
 Welcome to the R-Type multiplayer game engine documentation. This project implements a networked version of the classic R-Type shoot'em up using a modern Entity Component System architecture.
 
+![R-Type Engine Overview](rtype-overview.svg)
+
 ## Overview
 
-- Multiplayer network gameplay
-- Client-server architecture using UDP
+- Multiplayer network gameplay using UDP
 - Cross-platform (Linux/Windows)
-- Entity Component System
+- Entity Component System architecture
 - Custom game engine with modular design
+- Advanced features:
+  - Ship customization system
+  - Video recording and playback
+  - Procedural level generation
+  - Comprehensive accessibility options
 
 ## Documentation Sections
 
@@ -17,10 +23,9 @@ Welcome to the R-Type multiplayer game engine documentation. This project implem
 - [Architecture](architecture.md) - Technical design and systems
 - [Network Protocol](network-protocol.md) - Communication specifications
 - [Engine Features](engine-features.md) - Core functionalities
-- [Accessibility Guide](accessibility-guide.md) - Accessibility features and setup
-- [Procedural Generation](procedural-generation.md) - Level generation system
-- [Video System](video-system.md) - Video recording and playback system
 - [Ship Customization](ship-customization.md) - Ship selection and customization system
+- [Video System](video-system.md) - Recording and playback features
+- [Accessibility Guide](accessibility-guide.md) - Accessibility features and setup
 - [Contributions](contributions.md) - Development guidelines
 - [API Reference](api-reference.md) - Code documentation
 - [Protocol RFC](rfc_doc.md) - Protocol specification
