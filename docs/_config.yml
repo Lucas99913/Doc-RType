@@ -65,8 +65,8 @@ github:
 
 # Custom Styling
 colors:
-  header: "#159957"
-  gradient_left: "#155799"
-  gradient_right: "#159957"
-  link: "#1e6bb8"
-  section_headings: "#159957"
+  header: "#6B46C1"              # Violet principal
+  gradient_left: "#4834D4"       # Bleu indigo foncé
+  gradient_right: "#8B5CF6"      # Violet plus clair
+  link: "#4C1D95"                # Violet foncé pour les liens
+  section_headings: "#5B21B6"    # Violet moyen pour les titres de sections
