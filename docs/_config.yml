@@ -1,7 +1,7 @@
 # Theme Configuration
 remote_theme: pages-themes/cayman@v0.2.0
 title: R-Type Documentation
-description: Documentation for the R-Type game engine
+description: Documentation for the R-Type project
 
 # Markdown Processing
 markdown: GFM
