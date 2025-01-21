@@ -26,6 +26,7 @@ Welcome to the R-Type multiplayer game engine documentation. This project implem
 - [Ship Customization](ship-customization.md) - Ship selection and customization system
 - [Video System](video-system.md) - Recording and playback features
 - [Accessibility Guide](accessibility-guide.md) - Accessibility features and setup
+- [Procedural Generation](procedural-generation.md) - Level generation system
 - [Contributions](contributions.md) - Development guidelines
 - [API Reference](api-reference.md) - Code documentation
 - [Protocol RFC](rfc_doc.md) - Protocol specification
