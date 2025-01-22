@@ -59,9 +59,11 @@ plugins:
 show_downloads: true
 github:
   is_project_page: true
-  repository_url: https://github.com/theo-wq/Rtype-perf
-  owner_url: https://github.com/Lucas99913
-  owner_name: Lucas99913
+  repository_url: https://github.com/theo-wq/B-CPP-500-MAR-5-2-rtype-theo.berget
+  owner_url: https://github.com/theo-wq
+  owner_name: theo-wq
+  zip_url: https://github.com/theo-wq/B-CPP-500-MAR-5-2-rtype-theo.berget/zipball/main
+  tar_url: https://github.com/theo-wq/B-CPP-500-MAR-5-2-rtype-theo.berget/tarball/main
 
 # Custom Styling
 colors:
