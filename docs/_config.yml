@@ -59,14 +59,14 @@ plugins:
 show_downloads: true
 github:
   is_project_page: true
-  repository_url: https://github.com/Lucas99913/Doc-RType
+  repository_url: https://github.com/theo-wq/Rtype-perf
   owner_url: https://github.com/Lucas99913
   owner_name: Lucas99913
 
 # Custom Styling
 colors:
-  header: "#6B46C1"              # Violet principal
-  gradient_left: "#4834D4"       # Bleu indigo foncé
-  gradient_right: "#8B5CF6"      # Violet plus clair
-  link: "#4C1D95"                # Violet foncé pour les liens
-  section_headings: "#5B21B6"    # Violet moyen pour les titres de sections
+  header: "#6B46C1"
+  gradient_left: "#4834D4"
+  gradient_right: "#8B5CF6"
+  link: "#4C1D95"
+  section_headings: "#5B21B6"
